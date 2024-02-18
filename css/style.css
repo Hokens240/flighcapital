@@ -6525,7 +6525,7 @@ div#loading img {
   display: flex;
 }
 .brand-logo img {
-  max-height: 30px;
+  max-height: 100px;
 }
 .brand-logo .logo-dark {
   display: none;
