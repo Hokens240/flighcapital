@@ -126,7 +126,7 @@
                         <div class="home-1_hero-image-block">
                             <div class="home-1_hero-image">
                                 <img src="img/tradingimage.webp" alt="hero image">
-                                <a href="" data-fancybox class="btn-play btn-play absolute-center">
+                                <a href="https://www.youtube.com/watch?v=H49Bm5oAmwM" data-fancybox class="btn-play btn-play absolute-center">
                                     <i class="fa-solid fa-play"></i>
                                 </a>
                             </div>
@@ -549,6 +549,55 @@
                 </div>
             </div>
         </div>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 fixed-bottom">
+                        <div class="justify-content-center mb-4">
+                            <!-- TradingView Widget BEGIN -->
+                            <div class="tradingview-widget-container">
+                                <div class="tradingview-widget-container__widget"></div>
+                                <!--<div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Ticker Tape</span></a> by TradingView</div>-->
+                                <script type="text/javascript"
+                                    src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+                                        {
+                                            "symbols": [
+                                                {
+                                                    "proName": "FOREXCOM:SPXUSD",
+                                                    "title": "S&P 500"
+                                                },
+                                                {
+                                                    "proName": "FOREXCOM:NSXUSD",
+                                                    "title": "Nasdaq 100"
+                                                },
+                                                {
+                                                    "proName": "FX_IDC:EURUSD",
+                                                    "title": "EUR/USD"
+                                                },
+                                                {
+                                                    "proName": "BITSTAMP:BTCUSD",
+                                                    "title": "BTC/USD"
+                                                },
+                                                {
+                                                    "proName": "BITSTAMP:ETHUSD",
+                                                    "title": "ETH/USD"
+                                                }
+                                            ],
+                                                "showSymbolLogo": true,
+                                                    "colorTheme": "light",
+                                                        "isTransparent": false,
+                                                            "displayMode": "adaptive",
+                                                                "locale": "en"
+                                        }
+                                    </script>
+                            </div>
+                            <!-- TradingView Widget END -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <section class="custom-social-proof">
             <div class="custom-notification">
