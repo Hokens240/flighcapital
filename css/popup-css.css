@@ -7,7 +7,7 @@
   font-family: 'Open Sans', sans-serif;
     display: none; 
     .custom-notification {
-        width: 350px;
+        width: 320px;
         border: 0;
         text-align: left;
         z-index: 99999;
