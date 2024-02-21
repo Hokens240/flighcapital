@@ -5999,6 +5999,7 @@ li.nav-item-has-children.child-item:hover .fa-angle-right {
     height: 30px;
     width: 30px;
     margin-left: 15px;
+    padding-right: 10px;
     cursor: pointer;
     align-items: center;
     justify-content: center;
