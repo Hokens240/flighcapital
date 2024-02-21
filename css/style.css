@@ -6394,11 +6394,12 @@ div#loading img {
     z-index: 9999;
     height: 100%;
     background-color: transparent !important;
+    padding: 0 0;
 }
 .site-header--sticky.mobile-sticky-enable.reveal-header .site-navbar {
   background-color: #fff;
-  padding: 2px 2px; /*15px 10px;*/
-  border-radius: 5px;
+  padding: 0 0; /*15px 10px;*/
+  /*border-radius: 5px;*/
   /*box-shadow: 0 12px 34px -11px rgba(65, 62, 101, 0.1);*/
 }
 @media (min-width: 768px) {
