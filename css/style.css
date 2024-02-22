@@ -6322,9 +6322,10 @@ div#loading img {
 }
 
 .site-header {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  background-color: transparent;
+  padding-top: 0; /*15px*/
+  padding-bottom: 0; /*15px*/
+  background-color: #fff; /*transparent*/
+  box-shadow: 0 12px 34px -11px rgba(65, 62, 101, 0.1);
 }
 .site-header--absolute {
   position: absolute;
@@ -6401,7 +6402,7 @@ div#loading img {
   background-color: #fff;
   padding: 0 0; /*15px 10px;*/
   /*border-radius: 5px;*/
-  /*box-shadow: 0 12px 34px -11px rgba(65, 62, 101, 0.1);*/
+  box-shadow: 0 12px 34px -11px rgba(65, 62, 101, 0.1);
 }
 @media (min-width: 768px) {
   .site-header--sticky.mobile-sticky-enable.reveal-header {
