@@ -35,6 +35,35 @@
 </head>
 
 <body>
+  <style>
+    .password-container {
+          position: relative;
+        }
+        .password-container .toggle-password {
+          position: absolute;
+          top: 70%;
+          right: 10px;
+          transform: translateY(-50%);
+          cursor: pointer;
+        }
+                        </style>
+                        <script>
+      function togglePasswordVisibility() {
+        var passwordField = document.getElementById("password");
+        var icon = document.querySelector(".toggle-password");
+    
+        if (passwordField.type === "password") {
+          passwordField.type = "text";
+          icon.classList.remove("fa-eye");
+          icon.classList.add("fa-eye-slash");
+        } else {
+          passwordField.type = "password";
+          icon.classList.remove("fa-eye-slash");
+          icon.classList.add("fa-eye");
+        }
+      }
+    </script>
+
     <div class="page-wrapper overflow-hidden">
         <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~
         Sign in
@@ -45,7 +74,7 @@
               <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-10">
                 <div class="account-heading-block">
                   <a class='account-brand d-block' href='/'>
-                    <img src="img/IMG_5405.PNG" height="100" alt="FlighCapital">
+                    <img src="img/IMG_5405.PNG" height="250" alt="FlighCapital">
                   </a>
                   <div class="account-heading">
                     <h2 class="account-heading__title heading-md">
@@ -62,9 +91,10 @@
                       <h2 class="account-title">Email address</h2>
                       <input class="form-control bg-white" type="text" placeholder="Enter your email">
                     </div>
-                    <div class="account_comment-box__form-input">
+                    <div class="account_comment-box__form-input password-container">
                       <h2 class="account-title">Password*</h2>
-                      <input class="form-control bg-white" type="text" placeholder="password">
+                      <input class="form-control bg-white" id="password" type="text" placeholder="password">
+                      <span class="toggle-password fa fa-eye" onclick="togglePasswordVisibility()"></span>
                     </div>
                     <div class="account-condition-block">
                       <span class="account-condition"><input type="checkbox" id="checkbox">Remember me </span>

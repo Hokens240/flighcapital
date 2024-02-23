@@ -35,6 +35,35 @@
 </head>
 
 <body>
+  <style>
+    .password-container {
+          position: relative;
+        }
+        .password-container .toggle-password {
+          position: absolute;
+          top: 70%;
+          right: 10px;
+          transform: translateY(-50%);
+          cursor: pointer;
+        }
+                        </style>
+                        <script>
+      function togglePasswordVisibility() {
+        var passwordField = document.getElementById("password");
+        var icon = document.querySelector(".toggle-password");
+    
+        if (passwordField.type === "password") {
+          passwordField.type = "text";
+          icon.classList.remove("fa-eye");
+          icon.classList.add("fa-eye-slash");
+        } else {
+          passwordField.type = "password";
+          icon.classList.remove("fa-eye-slash");
+          icon.classList.add("fa-eye");
+        }
+      }
+    </script>
+    
     <div class="page-wrapper overflow-hidden">
         <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~
         Sign up
@@ -70,34 +99,6 @@
                         <h2 class="account-title">Phone</h2>
                         <input class="form-control bg-white" type="text" placeholder="Enter Phone Number">
                     </div>
-                    <style>
-.password-container {
-      position: relative;
-    }
-    .password-container .toggle-password {
-      position: absolute;
-      top: 70%;
-      right: 10px;
-      transform: translateY(-50%);
-      cursor: pointer;
-    }
-                    </style>
-                    <script>
-  function togglePasswordVisibility() {
-    var passwordField = document.getElementById("password");
-    var icon = document.querySelector(".toggle-password");
-
-    if (passwordField.type === "password") {
-      passwordField.type = "text";
-      icon.classList.remove("fa-eye");
-      icon.classList.add("fa-eye-slash");
-    } else {
-      passwordField.type = "password";
-      icon.classList.remove("fa-eye-slash");
-      icon.classList.add("fa-eye");
-    }
-  }
-</script>
                     <div class="account_comment-box__form-input password-container">
                         <h2 class="account-title">Password</h2>
                         <input class="form-control bg-white" id="password" type="password" placeholder="Enter Password">
