@@ -6396,7 +6396,6 @@ div#loading img {
     z-index: 9999;
     height: 100%;
     background-color: transparent !important;
-    padding: 0 0;
 }
 .site-header--sticky.mobile-sticky-enable.reveal-header .site-navbar {
   background-color: #fff;
@@ -6498,8 +6497,8 @@ div#loading img {
 }
 .site-header .header-cta-btn-mobile {
   display: block;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 5px; /*30px*/
+  padding-bottom: 5px; /*30px*/
   text-align: center;
 }
 @media (min-width: 992px) {
@@ -6611,7 +6610,7 @@ div#loading img {
 }
 .btn-masco--header {
   --btn-spacing-y: 13px;
-  --btn-spacing-x: 33px;
+  --btn-spacing-x: 44px;
 }
 .btn-masco--header-secondary {
   background: none;
