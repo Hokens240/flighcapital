@@ -6322,8 +6322,8 @@ div#loading img {
 }
 
 .site-header {
-  padding-top: 0; /*15px*/
-  padding-bottom: 0; /*15px*/
+  padding-top: 2px; /*15px*/
+  padding-bottom: 2px; /*15px*/
   background-color: #fff; /*transparent*/
   box-shadow: 0 12px 34px -11px rgba(65, 62, 101, 0.1);
 }
@@ -6385,6 +6385,7 @@ div#loading img {
   z-index: 999;
   position: fixed !important;
   transition: 0.4s;
+  padding: 2px 2px !important;
 }
 .site-header--sticky.mobile-sticky-enable.scrolling {
   transform: translateY(-100%);
@@ -6527,7 +6528,7 @@ div#loading img {
   display: flex;
 }
 .brand-logo img {
-  max-height: 100px;
+  height: 70px;
 }
 .brand-logo .logo-dark {
   display: none;
@@ -15237,18 +15238,22 @@ div#loading img {
   justify-content: center;
   align-items: center;
   text-align: center;
-  row-gap: 40px;
-  margin-bottom: 40px;
+  row-gap: 10px;
+  margin-bottom: 10px;
+ /*row-gap: 40px;
+  margin-bottom: 40px;*/
 }
 @media (min-width: 992px) {
   .account-section .account-heading-block {
-    margin-bottom: 60px;
-    row-gap: 60px;
+    margin-bottom: 10px;
+    row-gap: 10px;
+    /*margin-bottom: 60px;
+    row-gap: 60px;*/
   }
 }
 @media (min-width: 1400px) {
   .account-section .account-heading-block {
-    row-gap: 100px;
+    row-gap: 10px; /*100px;*/
   }
 }
 .account-section .account-heading-block .heading-md {
