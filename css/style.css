@@ -6501,6 +6501,7 @@ div#loading img {
   padding-top: 5px; /*30px*/
   padding-bottom: 5px; /*30px*/
   text-align: center;
+  margin-right: 12px;
 }
 @media (min-width: 992px) {
   .site-header .header-cta-btn-mobile {
@@ -6522,6 +6523,11 @@ div#loading img {
   .header-btns {
     margin-right: 0;
   }
+}
+
+.hero-paragraph {
+  font-size: 20px; 
+  padding-top: 40px;
 }
 
 .brand-logo {
